@@ -1,16 +1,14 @@
-#include <array>
-#include <iostream>
-#include <string_view>
-#include <tuple>
 #include <iostream>
 
-int main()
+int main(void)
 {
-    std::cout << "Enter a number: ";
+	std::cout << "Enter an integer: ";
 
-    int x{ }; 
-    std::cin >> x; 
+	int num;
+	std::cin >> num;
 
-    std::cout << "You entered " << x << '\n';
-    return 0;
+    int doublenum=num*2;
+	std::cout << "Double that number is: " << doublenum << '\n';
+
+	return 0;
 }
