@@ -1,8 +1,5 @@
-#include <iostream>
-#include "add.h"
-using namespace std;
-
-int add(int x, int y) {
-    return x + y;
+int sum(int a, int b) 
+{ 
+    return a+b; 
 }
 
