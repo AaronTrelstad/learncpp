@@ -26,6 +26,19 @@ class Stack {
             array.pop_back();
             std::cout << "Popped element: " << value << '\n';
         }
+
+        void printStack() {
+            if (isEmpty()) {
+                std::cout << "Stack is empty";
+                return;
+            }
+
+            std::cout << "( ";
+            for (int i = 0; i < array.size(); i++) {
+                std::cout << array[i] << " ";
+            }
+            std::cout << ")" << '\n';
+        }
 };
 
 int main() {
@@ -33,6 +46,7 @@ int main() {
 
     stack.push(4);
     stack.push(5);
+    stack.printStack();
     stack.pop();
 
     return 0;
